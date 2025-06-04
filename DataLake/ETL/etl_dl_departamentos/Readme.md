@@ -1,7 +1,7 @@
 ETL
 Extraer los datos del dataset (dl_departamentos.csv) y cargarlo en el Data Lake (tabla DL_Departamentos).
 
-![imagen etl_dl_departamentos](/assets/images/etl_dl_departamentos.png)
+![imagen etl_dl_departamentos](departamentos.png)
 
 Consideraciones:
 
