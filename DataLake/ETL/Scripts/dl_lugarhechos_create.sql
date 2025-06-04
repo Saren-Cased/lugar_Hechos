@@ -12,7 +12,7 @@ BEGIN
 		MUNICIPIO nvarchar(30) NULL,
 		COD_DPTOHEC tinyint NULL,
 		DPO nvarchar(60) NULL,
-		COD_MUNIHEC INT NULL,
+		COD_MPIOHEC INT NULL,
 		MUN nvarchar(30) NULL,
 		RIESGO nvarchar(50) NULL,
 		SEXO nvarchar(20) NULL,
