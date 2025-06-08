@@ -1,7 +1,7 @@
 ETL
 Extraer los datos del dataset (dl_lugarhechos.csv) y cargarlo en el Data Lake (tabla DL_Lugarhechos).
 
-![etl_dl_lugarhechos.png](DataLake/ETL/etl_dl_lugarhechos/etl_dl_lugarhechos.png)
+![etl_dl_lugarhechos.png]([DataLake/ETL/etl_dl_lugarhechos/etl_dl_lugarhechos.png](https://github.com/Saren-Cased/lugar_Hechos/blob/b76ed85696c2d2777cf74e01ca009eb15da985bf/DataLake/ETL/etl_dl_lugarhechos/etl_dl_lugarhechos.png))
 
 Consideraciones:
 
