@@ -1,4 +1,4 @@
-INSERT INTO DataWareHouse.dbo.DIM_Dias_Semana
+INSERT INTO DataWareHouseSub.dbo.DIM_Dias_Semana
 (NomDiaSemana, NomCortoDiaSemana)
 VALUES
 ('Lunes', 'LUN'),
