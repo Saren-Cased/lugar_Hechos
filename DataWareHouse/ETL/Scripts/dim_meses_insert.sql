@@ -1,4 +1,4 @@
-INSERT INTO DataWareHouse.dbo.DIM_Meses 
+INSERT INTO DataWareHouseSub.dbo.DIM_Meses 
 (NomMes, NomCortoMes)
 VALUES
 ('Enero', 'ENE'),
