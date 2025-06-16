@@ -1,0 +1,5 @@
+INSERT INTO DataWareHouseSub.dbo.DIM_Riesgo 
+(NomRiesgo)
+SELECT DISTINCT RIESGO
+FROM dbo.DL_Lugarhechos
+WHERE RIESGO IS NOT NULL
