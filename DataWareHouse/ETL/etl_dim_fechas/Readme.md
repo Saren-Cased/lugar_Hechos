@@ -1,6 +1,6 @@
 # ETL
 
-Extraer los datos del Data Lake (tabla DL_DataLakeSubcomision) y cargarlos en Data Warehouse (tabla DIM_Fechas).
+Extraer los datos del Data Lake (tabla DL_Lugarhechos) y cargarlos en Data Warehouse (tabla DIM_Fechas).
 
 ![diagramafechas.png](https://github.com/Saren-Cased/lugar_Hechos/blob/0ece58e6b03e4cb9a6a7508401ac450dc5e12979/DataWareHouse/ETL/etl_dim_fechas/etl_dim_fechas.png)
 
