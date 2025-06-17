@@ -1,5 +1,5 @@
 # ETL
-Extraer los datos del Data Lake (tabla DL_Lugarhechos) y cargarlos en Data Warehouse (tabla DIM_Lugarhechos).
+Extraer los datos del Data Lake (tabla DL_Lugarhechos) y cargarlos en Data Warehouse (tabla DIM_Riesgo).
 
 ![diagramariesgo.png](https://github.com/Saren-Cased/lugar_Hechos/blob/04b055aa5e296db0a4d91d57b343f0495c2a5e33/DataWareHouse/ETL/etl_dim_riesgo/etl_dim_riesgo.png)
 
