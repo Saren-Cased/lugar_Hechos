@@ -1,4 +1,4 @@
-#ETL
+# ETL
 
 Extraer los datos del Data Lake (tabla DL_Lugarhechos) y cargarlos en Data Warehouse (tabla DIM_Sexos).
 
