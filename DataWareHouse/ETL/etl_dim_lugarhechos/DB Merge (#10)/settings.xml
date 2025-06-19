@@ -22,13 +22,15 @@
                 <entry key="0" type="xstring" value="FechaHecho"/>
             </config>
             <config key="excluded_names">
-                <entry key="array-size" type="xint" value="6"/>
+                <entry key="array-size" type="xint" value="8"/>
                 <entry key="0" type="xstring" value="IdLugarhechos"/>
                 <entry key="1" type="xstring" value="CodMpio"/>
-                <entry key="2" type="xstring" value="CodStio"/>
-                <entry key="3" type="xstring" value="IdRiesgo"/>
-                <entry key="4" type="xstring" value="IdSexo"/>
-                <entry key="5" type="xstring" value="TipoRuta"/>
+                <entry key="2" type="xstring" value="NomMupio"/>
+                <entry key="3" type="xstring" value="CodStio"/>
+                <entry key="4" type="xstring" value="Sitio"/>
+                <entry key="5" type="xstring" value="IdRiesgo"/>
+                <entry key="6" type="xstring" value="IdSexo"/>
+                <entry key="7" type="xstring" value="TipoRuta"/>
             </config>
             <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
             <config key="name_pattern">
@@ -52,12 +54,14 @@
         <config key="setColumns">
             <entry key="filter-type" type="xstring" value="STANDARD"/>
             <config key="included_names">
-                <entry key="array-size" type="xint" value="5"/>
+                <entry key="array-size" type="xint" value="7"/>
                 <entry key="0" type="xstring" value="CodMpio"/>
-                <entry key="1" type="xstring" value="CodStio"/>
-                <entry key="2" type="xstring" value="IdRiesgo"/>
-                <entry key="3" type="xstring" value="IdSexo"/>
-                <entry key="4" type="xstring" value="TipoRuta"/>
+                <entry key="1" type="xstring" value="NomMupio"/>
+                <entry key="2" type="xstring" value="CodStio"/>
+                <entry key="3" type="xstring" value="Sitio"/>
+                <entry key="4" type="xstring" value="IdRiesgo"/>
+                <entry key="5" type="xstring" value="IdSexo"/>
+                <entry key="6" type="xstring" value="TipoRuta"/>
             </config>
             <config key="excluded_names">
                 <entry key="array-size" type="xint" value="2"/>
@@ -145,14 +149,14 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 589, Cols: 9"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 589, Cols: 11"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
         <config key="port_2">
             <entry key="index" type="xint" value="2"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.database.port.DBDataPortObjectSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.database.port.DBDataPortObject"/>
-            <entry key="port_object_summary" type="xstring" value="Microsoft SQL Server b3557c0f-b50f-4733-ae83-0064360970a2"/>
+            <entry key="port_object_summary" type="xstring" value="Microsoft SQL Server 842616c2-58dc-40ac-bee4-5c0e80fa6d99"/>
             <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
             <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
             <entry key="port_dir_location" type="xstring" value="port_2"/>
@@ -160,6 +164,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="d21a1737-35ab-431b-aaee-738391cb5696"/>
+        <entry key="file_store_id" type="xstring" value="01e84180-7bac-4264-9192-20a67fc4cf26"/>
     </config>
 </config>

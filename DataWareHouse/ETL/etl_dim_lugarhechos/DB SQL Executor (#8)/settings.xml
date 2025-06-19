@@ -7,7 +7,7 @@
     </config>
     <config key="model">
         <entry key="statementSeparator" type="xstring" value=";"/>
-        <entry key="statement" type="xstring" value="-- Explicación:%%00010-- OBJECT_ID('dbo.FAC_Homicidios', 'U'): Verifica si existe un objeto de tipo tabla ('U' para &quot;User Table&quot;) con ese nombre.%%00010-- Si OBJECT_ID devuelve NULL, la tabla no existe, por lo que se ejecuta la instrucción CREATE TABLE.%%00010%%00010IF OBJECT_ID('dbo.FAC_Lugarhechos', 'U') IS NULL%%00010BEGIN%%00010%%00009CREATE TABLE dbo.FAC_Lugarhechos (%%00010%%00009%%00009IdLugarhechos int IDENTITY(1,1) NOT NULL,%%00010%%00009%%00009FechaHecho date NOT NULL,%%00010%%00009%%00009CodMpio int NULL,%%00010%%00009%%00009CodStio int NULL,%%00010%%00009%%00009IdRiesgo int NOT NULL,%%00010%%00009%%00009IdSexo int NULL,%%00010%%00009%%00009TipoRuta nvarchar(30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,%%00010%%00009%%00009CONSTRAINT FAC_Lugarhechos_PK PRIMARY KEY (IdLugarhechos),%%00010%%00009%%00009CONSTRAINT FAC_Lugarhechos_DIM_Fechas_FK FOREIGN KEY (FechaHecho) REFERENCES DataWareHouseSub.dbo.DIM_Fechas(FechaHecho),%%00010%%00009%%00009CONSTRAINT FAC_Lugarhechos_DIM_Municipios_FK FOREIGN KEY (CodMpio) REFERENCES DataWareHouseSub.dbo.DIM_Municipios(CodMpio),%%00010%%00009%%00009CONSTRAINT FAC_Lugarhechos_DIM_Sitios_FK FOREIGN KEY (CodStio) REFERENCES DataWareHouseSub.dbo.DIM_Municipios(CodMpio),%%00010%%00009%%00009CONSTRAINT FAC_Lugarhechos_DIM_Riesgo_FK FOREIGN KEY (IdRiesgo) REFERENCES DataWareHouseSub.dbo.DIM_Riesgo(IdRiesgo),%%00010%%00009%%00009CONSTRAINT FAC_Lugarhechos_DIM_Sexos_FK FOREIGN KEY (IdSexo) REFERENCES DataWareHouseSub.dbo.DIM_Sexos(IdSexo),%%00010%%00009);%%00010END;"/>
+        <entry key="statement" type="xstring" value="-- Explicación:%%00010-- OBJECT_ID('dbo.FAC_Homicidios', 'U'): Verifica si existe un objeto de tipo tabla ('U' para &quot;User Table&quot;) con ese nombre.%%00010-- Si OBJECT_ID devuelve NULL, la tabla no existe, por lo que se ejecuta la instrucción CREATE TABLE.%%00010%%00010IF OBJECT_ID('dbo.FAC_Lugarhechos', 'U') IS NULL%%00010BEGIN%%00010%%00009CREATE TABLE dbo.FAC_Lugarhechos (%%00010%%00009%%00009IdLugarhechos int IDENTITY(1,1) NOT NULL,%%00010%%00009%%00009FechaHecho date NOT NULL,%%00010%%00009%%00009CodMpio int NULL,%%00010%%00009%%00009NomMupio nvarchar(30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,%%00010%%00009%%00009CodStio int NULL,%%00010%%00009%%00009Sitio nvarchar(30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,%%00010%%00009%%00009IdRiesgo int NOT NULL,%%00010%%00009%%00009IdSexo int NULL,%%00010%%00009%%00009TipoRuta nvarchar(30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,%%00010%%00009%%00009CONSTRAINT FAC_Lugarhechos_PK PRIMARY KEY (IdLugarhechos),%%00010%%00009%%00009CONSTRAINT FAC_Lugarhechos_DIM_Fechas_FK FOREIGN KEY (FechaHecho) REFERENCES DataWareHouseSub.dbo.DIM_Fechas(FechaHecho),%%00010%%00009%%00009CONSTRAINT FAC_Lugarhechos_DIM_Municipios_FK FOREIGN KEY (CodMpio) REFERENCES DataWareHouseSub.dbo.DIM_Municipios(CodMpio),%%00010%%00009%%00009CONSTRAINT FAC_Lugarhechos_DIM_Sitios_FK FOREIGN KEY (CodStio) REFERENCES DataWareHouseSub.dbo.DIM_Municipios(CodMpio),%%00010%%00009%%00009CONSTRAINT FAC_Lugarhechos_DIM_Riesgo_FK FOREIGN KEY (IdRiesgo) REFERENCES DataWareHouseSub.dbo.DIM_Riesgo(IdRiesgo),%%00010%%00009%%00009CONSTRAINT FAC_Lugarhechos_DIM_Sexos_FK FOREIGN KEY (IdSexo) REFERENCES DataWareHouseSub.dbo.DIM_Sexos(IdSexo),%%00010%%00009);%%00010END;"/>
         <config key="multipleStatement_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -50,7 +50,7 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.database.port.DBSessionPortObjectSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.database.port.DBSessionPortObject"/>
-            <entry key="port_object_summary" type="xstring" value="Microsoft SQL Server b3557c0f-b50f-4733-ae83-0064360970a2"/>
+            <entry key="port_object_summary" type="xstring" value="Microsoft SQL Server 842616c2-58dc-40ac-bee4-5c0e80fa6d99"/>
             <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
             <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
@@ -58,6 +58,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="abd776d1-3f4f-4142-ab79-93649df2ca36"/>
+        <entry key="file_store_id" type="xstring" value="ebd4aa92-cb24-429e-969b-15f9027d37d0"/>
     </config>
 </config>

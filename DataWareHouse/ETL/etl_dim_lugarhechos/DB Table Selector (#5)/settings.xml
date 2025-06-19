@@ -20,7 +20,7 @@
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <config key="external_to_knime_mapping"/>
-        <entry key="sql_statement" type="xstring" value="SELECT ROW_NUMBER() OVER (ORDER BY L.FECHA_SUBCOMISION) AS IdLugarhechos%%00010    , FECHA_SUBCOMISION AS FechaHecho%%00010%%00009, COD_MUNI AS CodMpio%%00010%%00009, C_MO_SITIO AS CodStio%%00010%%00009, (SELECT IdRiesgo FROM DataWareHouseSub.dbo.DIM_Riesgo WHERE NomRiesgo = L.RIESGO) AS IdRiesgo%%00010    , (SELECT IdSexo FROM DataWareHouseSub.dbo.DIM_Sexos WHERE NomSexo = L.SEXO) AS IdSexo%%00010%%00009, TIPO_RUTA AS TipoRuta%%00010FROM DataLakeSubcomision.dbo.DL_Lugarhechos AS L"/>
+        <entry key="sql_statement" type="xstring" value="SELECT ROW_NUMBER() OVER (ORDER BY L.FECHA_SUBCOMISION) AS IdLugarhechos%%00010    , FECHA_SUBCOMISION AS FechaHecho%%00010%%00009, COD_MUNI AS CodMpio%%00010%%00009, MUNICIPIO AS NomMupio%%00010%%00009, C_MO_SITIO AS CodStio%%00010%%00009, SITIO AS Sitio%%00010%%00009, (SELECT IdRiesgo FROM DataWareHouseSub.dbo.DIM_Riesgo WHERE NomRiesgo = L.RIESGO) AS IdRiesgo%%00010    , (SELECT IdSexo FROM DataWareHouseSub.dbo.DIM_Sexos WHERE NomSexo = L.SEXO) AS IdSexo%%00010%%00009, TIPO_RUTA AS TipoRuta%%00010FROM DataLakeSubcomision.dbo.DL_Lugarhechos AS L"/>
         <entry key="custom_query" type="xboolean" value="true"/>
     </config>
     <config key="nodeAnnotation">
@@ -59,7 +59,7 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.database.port.DBDataPortObjectSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.database.port.DBDataPortObject"/>
-            <entry key="port_object_summary" type="xstring" value="Microsoft SQL Server e601db8f-712b-42aa-a2fa-d341fbdd8cba"/>
+            <entry key="port_object_summary" type="xstring" value="Microsoft SQL Server bf470869-1e25-41bf-bd28-3bcfece67523"/>
             <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
             <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
@@ -67,6 +67,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="8b48463e-0301-4e07-9a62-dabaa966af0b"/>
+        <entry key="file_store_id" type="xstring" value="8f007422-591f-4986-81f3-91633ec4d535"/>
     </config>
 </config>
